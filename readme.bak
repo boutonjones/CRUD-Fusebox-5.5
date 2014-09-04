@@ -22,21 +22,6 @@ boutonjones@users.noreply.github.com
 
 
 
-@All --- Thank you all for your help.  I appreciate your time and your ideas.  The application is now up and running.
-
-@Peter Boughton --- I am working on FW/1 for a similar project.  But I'm required to use Fusebox 5.5 for this one.   (BTW you have a great last name.  Check out http://www.boutonjones.com/pub/name.cfm )
-
-@Jeff Davis  --- I tried dumping the attributes scope but the query wasn't there until I added <cfset ATTRIBUTES  = myFusebox.variables().ATTRIBUTES> in various CFCs.  
-
-@derekheds --- D'oh!   You are right!  By mistake I uploaded the crud4fusebox folder to GitHub instead of the crud4fusebox5_5 folder.  I've replaced crud4fusebox with a revised version of crud4fusebox5_5.
-
-@Sean --- You are right.  But in the corrected version I am using CFCs.  They're there in the model, view, and controller directories.  The CFCs are calling the qry_ and dsp_ files.
-
-@Jared ---  Your suggestion worked.  I added the tag <cfset request.qrySelTblTasks = qrySelTblTasks> to qry_SelTblTasks and suddenly it appeared in the request scope.  It wasn't when I checked before.  I must be missing a setting that makes the request scope the default.   Or maybe that default works in CFCs but not in CFMs.
-
-
-
-
 
 
 
