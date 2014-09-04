@@ -3,7 +3,7 @@
 
 		<div align="center">
 		
-			<table class="standard">
+			<table class="standard" id="crud_table">
 				<caption>SCRUM Sprint Report</caption>
 				<tr>
 					<th>Tasks</th>

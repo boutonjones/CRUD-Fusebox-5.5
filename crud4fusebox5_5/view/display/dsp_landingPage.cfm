@@ -13,7 +13,7 @@
 		
         	<cftry>
 
-			<table class="standard">
+			<table class="standard" id="crud_table">
 				<caption>CRUD Report</caption>
 				<tr>
 					<th>Tasks</th>
@@ -26,7 +26,7 @@
 				</tr>
 				<cfoutput query="request.qrySelTblTasks">
 					<tr>
-						<td><a href="index.cfm?fuseaction=updateForm&TaskID=#TaskID#">#TaskName#</a></td>
+						<td><a href="index.cfm?fuseaction=app.updateForm&TaskID=#TaskID#">#TaskName#</a></td>
 						<td>#TaskDescript#</td>
 						<td>#DevName#</td>
 						<td>#PercentComplete#</td>

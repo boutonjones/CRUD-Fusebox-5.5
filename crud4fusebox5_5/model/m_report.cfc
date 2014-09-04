@@ -11,6 +11,7 @@
 		<cfargument name="myFusebox" />
 		<cfargument name="event" />
         <!---<cfset var qrySelTblTasks="">--->
+		<cfset ATTRIBUTES  = myFusebox.variables().ATTRIBUTES>
         <cfset ATTRIBUTES.OrderByGroup="DevName">
 		<cfinclude template="qry_SelTblTasks.cfm">
 	</cffunction>
@@ -19,7 +20,8 @@
  		<cfargument name="myFusebox" />
 		<cfargument name="event" />
         <cfset var qrySelTblTasks="">
-		<!---<cfset ATTRIBUTES.OrderByGroup="StatusTerm">--->
+		<cfset ATTRIBUTES  = myFusebox.variables().ATTRIBUTES>
+		<cfset ATTRIBUTES.OrderByGroup="StatusTerm">
         <cfinclude template="qry_SelTblTasks.cfm">
 	</cffunction>
     

@@ -1,1 +1,0 @@
-<!--- or variables which exist inside of a single cicuit applicaion  --->

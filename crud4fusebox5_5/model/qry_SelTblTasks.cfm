@@ -44,14 +44,13 @@
         <br />
         <cfdump var="#APPLICATION#" label="APPLICATION" expand="no"><br />
         <br />
+		<p>qry_SelTblTasks.cfm</p>
+		<cfdump var="#qrySelTblTasks#" label="qrySelTblTasks" expand="no"><br />
 		--->
-		
+
 		<cfset request.qrySelTblTasks = qrySelTblTasks>
 		
-		<!---
-		<p>qry_SelTblTasks.cfm</p>
-		<cfdump var="#request#" label="request" expand="no"><br />
-		--->
+
 		
 
 		

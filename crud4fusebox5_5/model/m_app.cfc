@@ -11,6 +11,8 @@
     <cffunction name="updateForm">
 		<cfargument name="myFusebox" />
 		<cfargument name="event" />
+		<!--- TaskID --->
+		<cfset ATTRIBUTES  = myFusebox.variables().ATTRIBUTES>
 		<cfinclude template="qry_SelTblTasks.cfm">
         <cfinclude template="qry_GetTblDevelopers.cfm">
         <cfinclude template="qry_GetTblRefStatus.cfm">
