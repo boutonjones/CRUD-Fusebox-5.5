@@ -785,11 +785,11 @@ p.intro, p.color_h1 {
 /* Alternating Row Colors */
 
 .OddRow         {
-    background-color: #EEEEEE
+    background-color: #FFFFFF;
 }
 
 .EvenRow        {
-    background-color: #CCEEFF
+	background-color: #EEEEEE;
 }
 
 .taichi {

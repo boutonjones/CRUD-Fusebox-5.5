@@ -1,10 +1,12 @@
+
+		<cfset qrySelTblTasks = event.getValue("qrySelTblTasks")>
 	
 		<h2 style="text-align: center">SCRUM Sprint Report</h4>
 		
 		<div align="center">
 		
 			<!--- Outer CFOUTPUT (ORDER BY StatusCode) --->
-			<cfoutput query="request.qrySelTblTasks" group="StatusTerm">
+			<cfoutput query="qrySelTblTasks" group="StatusTerm">
 			
 				<table class="standard">
 					<caption>#StatusTerm#</caption>

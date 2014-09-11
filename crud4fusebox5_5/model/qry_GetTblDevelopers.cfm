@@ -4,4 +4,5 @@
 			FROM tblDevelopers; 
 		</cfquery>
 		
-		<cfset request.qryGetTblDevelopers = qryGetTblDevelopers>
+		<!---<cfset request.qryGetTblDevelopers = qryGetTblDevelopers>--->
+		<cfset event.setValue("qryGetTblDevelopers",qryGetTblDevelopers)>

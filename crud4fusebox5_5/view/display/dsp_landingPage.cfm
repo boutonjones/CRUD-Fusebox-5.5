@@ -1,4 +1,6 @@
 
+		<cfset qrySelTblTasks = event.getValue("qrySelTblTasks")>
+
 		<div style="margin: 20px; border: groove; padding: 20px 20px;">
 		
 			<p>This application is for experimenting with the Fusebox 5.5 Framework.</p>
@@ -13,7 +15,7 @@
 		
         	<cftry>
 
-			<table class="standard" id="crud_table">
+			<table class="standard">
 				<caption>CRUD Report</caption>
 				<tr>
 					<th>Tasks</th>
@@ -24,7 +26,7 @@
 					<th>Memo</th>
 					<th>Delete</th>
 				</tr>
-				<cfoutput query="request.qrySelTblTasks">
+				<cfoutput query="qrySelTblTasks">
 					<tr>
 						<td><a href="index.cfm?fuseaction=app.updateForm&TaskID=#TaskID#">#TaskName#</a></td>
 						<td>#TaskDescript#</td>

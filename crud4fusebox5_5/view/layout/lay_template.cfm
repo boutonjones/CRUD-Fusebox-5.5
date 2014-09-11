@@ -14,8 +14,8 @@
     <script src="../js/jquery-1.11.1.js" type="text/javascript"></script>    
     <script language="javascript">
         $(document).ready(function() {           
-            $('#crud_table > tbody > tr:even').addClass('EvenRow');
-            $('#crud_table > tbody > tr:odd').addClass('OddRow');
+            $('.standard > tbody > tr:even').addClass('EvenRow');
+            $('.standard > tbody > tr:odd').addClass('OddRow');
         }); 
     </script>
 </head>

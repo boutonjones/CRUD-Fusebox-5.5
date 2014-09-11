@@ -1,4 +1,6 @@
 
+		<cfset qrySelTblTasks = event.getValue("qrySelTblTasks")>
+
 		<h2 style="text-align: center">SCRUM Sprint Report</h4>
 
 		<div align="center">
@@ -13,7 +15,7 @@
 					<th>Status</th>
 					<th>Memo</th>
 				</tr>
-				<cfoutput query="request.qrySelTblTasks">
+				<cfoutput query="qrySelTblTasks">
 					<tr>
 						<td>#TaskName#</td>
 						<td>#TaskDescript#</td>

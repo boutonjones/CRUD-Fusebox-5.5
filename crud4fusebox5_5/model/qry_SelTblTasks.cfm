@@ -48,8 +48,8 @@
 		<cfdump var="#qrySelTblTasks#" label="qrySelTblTasks" expand="no"><br />
 		--->
 
-		<cfset request.qrySelTblTasks = qrySelTblTasks>
-		
+		<!---<cfset request.qrySelTblTasks = qrySelTblTasks>--->
+		<cfset event.setValue("qrySelTblTasks",qrySelTblTasks)>
 
 		
 

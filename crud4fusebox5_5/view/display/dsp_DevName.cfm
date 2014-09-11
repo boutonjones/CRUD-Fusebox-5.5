@@ -1,10 +1,12 @@
 	
+		<cfset qrySelTblTasks = event.getValue("qrySelTblTasks")>
+		
 		<h2>SCRUM Sprint Report</h4>
 		
 		<div align="center">
 		
 			<!--- Outer CFOUTPUT (ORDER BY DevName) --->
-			<cfoutput query="request.qrySelTblTasks" group="DevName">
+			<cfoutput query="qrySelTblTasks" group="DevName">
 			
 				<table class="standard">
 					<caption>#DevName#</caption>

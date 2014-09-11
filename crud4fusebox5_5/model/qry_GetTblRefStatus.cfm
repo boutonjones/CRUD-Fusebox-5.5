@@ -4,4 +4,5 @@
 			FROM tblRefStatus;
 		</cfquery>
 		
-		<cfset request.qryGetTblRefStatus = qryGetTblRefStatus>
+		<!---<cfset request.qryGetTblRefStatus = qryGetTblRefStatus>--->
+		<cfset event.setValue("qryGetTblRefStatus",qryGetTblRefStatus)>
